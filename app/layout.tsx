@@ -51,7 +51,7 @@ export default function RootLayout({
         " h-full antialiased",
       )}
     >
-      <body className="min-h-full ">
+      <body className="min-h-full overflow-x-hidden">
         <Navbar />
         {children}
       </body>

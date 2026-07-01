@@ -3,7 +3,7 @@ import { useState } from "react";
 import { cn } from "../lib/utils";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { nav } from "motion/react-client";
+import MobileNavigation from "./MobileNavigation";
 
 const Nav = [
   {
@@ -46,6 +46,7 @@ function Navbar() {
               onClick={() => setActiveNav(navlink.link)}
               className={cn(
                 activeNav === navlink.link ? "text-[#0F172A]" : "text-muted",
+                "hover:text-[#0F172A]",
               )}
             >
               <Link href={navlink.to}>{navlink.link}</Link>
@@ -82,6 +83,13 @@ function Navbar() {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
+
+      {/* Mobile Navbar */}
+      <MobileNavigation
+        navLinks={Nav}
+        open={openNav}
+        close={() => setOpenNav(false)}
+      />
     </nav>
   );
 }
