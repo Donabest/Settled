@@ -3,7 +3,7 @@ import CardTwo from "./CardTwo";
 
 function Hero() {
   return (
-    <section className="max-w-7xl mx-auto mt-35">
+    <header className="max-w-7xl h-[50vh] mx-auto mt-35">
       <div className="text-center space-y-4">
         <h1 className="text-[6vw] font-nunito font-medium text-center tracking-tight leading-20">
           Stop Chasing Clients.<br></br>{" "}
@@ -33,14 +33,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute -left-7 top-[50%] -rotate-6 animate-float">
+      <div className="absolute -left-7 top-[50%] -rotate-6 ">
         <CardOne />
       </div>
 
-      <div className="absolute -right-3 top-[50%] -rotate-6 animate-float delay-300">
+      <div className="absolute -right-3 top-[50%] -rotate-6">
         <CardTwo />
       </div>
-    </section>
+    </header>
   );
 }
 

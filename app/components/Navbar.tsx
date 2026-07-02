@@ -31,7 +31,7 @@ function Navbar() {
   const [openNav, setOpenNav] = useState(false);
   const [activeNav, setActiveNav] = useState("Home");
   return (
-    <nav className=" shadow-xs backdrop-blur-2xl ">
+    <nav className="fixed top-0 left-0 right-0 z-99 shadow-xs backdrop-blur-lg ">
       <div className="flex justify-between items-center py-6 px-10 max-w-7xl mx-auto md:px-8">
         <div className="font-syne font-semibold text-2xl italic tracking-tight text-shadow-lg">
           <Link href="/">
