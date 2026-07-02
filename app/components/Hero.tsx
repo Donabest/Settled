@@ -3,7 +3,7 @@ import CardTwo from "./CardTwo";
 
 function Hero() {
   return (
-    <header className="max-w-7xl h-[50vh] mx-auto mt-35">
+    <header className="max-w-7xl  mx-auto mt-50">
       <div className="text-center space-y-4">
         <h1 className="text-[6vw] font-nunito font-medium text-center tracking-tight leading-20">
           Stop Chasing Clients.<br></br>{" "}

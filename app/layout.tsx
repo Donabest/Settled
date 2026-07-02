@@ -48,10 +48,10 @@ export default function RootLayout({
         nunitoSans.variable,
         jakartaSans.variable,
         syne.variable,
-        " h-full antialiased",
+        "h-full antialiased scroll-smooth ",
       )}
     >
-      <body className="min-h-full overflow-x-hidden">
+      <body className=" min-h-full overflow-x-hidden">
         <Navbar />
         {children}
       </body>
