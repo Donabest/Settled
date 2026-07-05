@@ -4,8 +4,8 @@ import {
   CheckCircle2,
   CreditCard,
   FileText,
+  Puzzle,
   Send,
-  Sparkles,
 } from "lucide-react";
 
 const solutions = [
@@ -28,9 +28,9 @@ const solutions = [
 
 function Solution() {
   return (
-    <section className="pb-28">
-      <div className="flex w-fit  justify-center items-center  gap-2  rounded-full border border-primary/25 bg-primary/5 px-8 py-1.5 font-sans text-sm text-surface">
-        <Sparkles size={14} /> Solution
+    <section className="py-20 border-t border-[#edf1f5]">
+      <div className="flex w-fit justify-center items-center  gap-2  rounded-full border border-primary/25 bg-primary/5 px-8 py-1.5 font-sans text-sm text-surface">
+        <Puzzle size={14} /> Solution
       </div>
 
       <div className="mt-8 grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">

@@ -26,7 +26,7 @@ const problems = [
 
 function Problem() {
   return (
-    <section className="mt-28 pb-24">
+    <section className="mt-28 py-20 border-t border-[#edf1f5]">
       <div className="flex items-center gap-2 w-fit mx-auto px-8 py-1.5 border border-surface/20 rounded-full text-sm font-sans text-surface  ">
         <ShieldAlert size={14} /> Problems
       </div>

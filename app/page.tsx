@@ -1,3 +1,4 @@
+import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import InvoicePreview from "./components/InvoicePreview";
@@ -7,13 +8,14 @@ import Solution from "./components/Solution";
 
 function page() {
   return (
-    <main className=" px-8 max-w-7xl mx-auto md:px-4">
+    <main className=" px-8 max-w-7xl mx-auto md:px-8">
       <Hero />
       <Problem />
       <Solution />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       {/* <InvoicePreview /> */}
-      {/* <Pricing /> */}
+      <Pricing />
+      <CTA />
     </main>
   );
 }

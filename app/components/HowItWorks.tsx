@@ -7,6 +7,7 @@ import {
   ReceiptText,
   Send,
 } from "lucide-react";
+import Link from "next/link";
 
 const steps = [
   {
@@ -49,15 +50,15 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <section id="HowItWorks" className="pb-32 pt-8">
+    <section id="HowItWorks" className="pb-32 pt-20 border-t border-[#edf1f5]">
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="lg:sticky lg:top-28 lg:h-fit">
           <div className="flex w-fit items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-8 py-1.5 font-sans text-sm text-surface">
             <ListChecks size={14} /> How it works
           </div>
 
-          <div className="mt-8 space-y-4">
-            <h2 className="font-nunito text-5xl font-medium leading-tight tracking-tight text-surface md:text-6xl">
+          <div className="my-8 space-y-4">
+            <h2 className="font-nunito text-5xl font-medium  tracking-tight text-surface md:text-[4vw]">
               Four simple steps from done work to paid work.
             </h2>
             <p className="max-w-lg font-sans text-sm leading-6 text-muted">
@@ -66,6 +67,12 @@ function HowItWorks() {
               makes the invoice process.
             </p>
           </div>
+          <Link
+            href={""}
+            className="px-8 py-3 bg-black text-white rounded-full hover:bg-black/80"
+          >
+            Get Started Now
+          </Link>
         </div>
 
         <div className="space-y-8 lg:min-h-[220vh]">
@@ -84,7 +91,7 @@ function HowItWorks() {
             ) => (
               <article
                 key={title}
-                className="rounded-2xl border border-surface/10 bg-white p-5 shadow-2xl shadow-black/10 lg:sticky"
+                className="rounded-2xl border border-surface/10 bg-white px-8 py-5 shadow-2xl shadow-black/10 lg:sticky"
                 style={{
                   top: `${112 + index * 18}px`,
                   zIndex: index + 1,
