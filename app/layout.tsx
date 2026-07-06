@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import { cn } from "./lib/utils";
 import Navbar from "@/app/components/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist_Mono({
   variable: "--font-geist-sans",
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body className=" min-h-full overflow-x-hidden">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
