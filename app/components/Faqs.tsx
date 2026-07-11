@@ -1,5 +1,5 @@
 "use client";
-import { ChevronDown, Minus, Plus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
 
 const questionAndAnswer = [

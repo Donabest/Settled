@@ -2,7 +2,6 @@ import CTA from "./components/CTA";
 import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
-import InvoicePreview from "./components/InvoicePreview";
 import Pricing from "./components/Pricing";
 import Problem from "./components/Problem";
 import Solution from "./components/Solution";
