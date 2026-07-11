@@ -22,16 +22,12 @@ const Nav = [
     link: "Pricing",
     to: "#Pricing",
   },
-  {
-    link: "Contact",
-    to: "#Contact",
-  },
 ];
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
   const [activeNav, setActiveNav] = useState("Home");
   return (
-    <nav className="fixed top-0 left-0 right-0 z-99 shadow-xs backdrop-blur-lg ">
+    <nav className="fixed top-0 left-0 right-0 z-99 bg-[#f8fafc]/70  shadow-xs backdrop-blur-lg ">
       <div className="flex justify-between items-center py-6 px-10 max-w-7xl mx-auto md:px-8">
         <div className="font-syne font-semibold text-2xl italic tracking-tight text-shadow-lg">
           <Link href="/">
@@ -39,7 +35,7 @@ function Navbar() {
           </Link>
         </div>
 
-        <ul className="hidden space-x-6 font-nunito font-semibold  md:flex ">
+        <ul className="hidden space-x-6 font-monserrat font-medium  md:flex ">
           {Nav.map((navlink) => (
             <li
               key={navlink.to}

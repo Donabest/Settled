@@ -1,9 +1,10 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 function Footer() {
   const footerLinks = {
     Product: ["Features", "How it works", "Pricing"],
-    Company: ["About", "Contact"],
+    Company: ["About", "Faq"],
   };
   return (
     <footer className="bg-black text-white border-t border-gray-100 py-12 mt-24">
@@ -27,12 +28,12 @@ function Footer() {
             <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link}>
-                  <a
-                    href="#"
+                  <Link
+                    href={`#${link === "How it works" ? "Howitworks" : link}`}
                     className="text-sm  text-neutral-400  hover:text-white transition-colors"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

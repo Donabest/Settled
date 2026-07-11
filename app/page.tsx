@@ -1,4 +1,5 @@
 import CTA from "./components/CTA";
+import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import InvoicePreview from "./components/InvoicePreview";
@@ -15,6 +16,7 @@ function page() {
       <HowItWorks />
       {/* <InvoicePreview /> */}
       <Pricing />
+      <Faqs />
       <CTA />
     </main>
   );

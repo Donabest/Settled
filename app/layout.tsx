@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {
   Geist_Mono,
+  Montserrat,
   Nunito,
   Plus_Jakarta_Sans,
   Syne_Mono,
@@ -12,6 +13,11 @@ import Footer from "./components/Footer";
 
 const geistSans = Geist_Mono({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const Monserrat = Montserrat({
+  variable: "--font-monserrat",
   subsets: ["latin"],
 });
 const nunitoSans = Nunito({
@@ -49,6 +55,7 @@ export default function RootLayout({
         nunitoSans.variable,
         jakartaSans.variable,
         syne.variable,
+        Monserrat.variable,
         "h-full antialiased scroll-smooth ",
       )}
     >
