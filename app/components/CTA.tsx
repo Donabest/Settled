@@ -21,10 +21,10 @@ function CTA() {
           </button>
         </div>
 
-        <div className="absolute w-100 h-100 left-10 top-30 border-30 border-gray-50 rounded-full "></div>
-        <div className="absolute w-100 h-100 right-10 top-30 border-30 border-gray-50 rounded-full"></div>
-        <div className="absolute left-8 top-1/2 -translate-y-1/2 w-48 h-64 rounded-2xl border-2 border-gray-200 opacity-30 rotate-[-8deg]" />
-        <div className="absolute right-8 top-1/2 -translate-y-1/2 w-48 h-64 rounded-2xl border-2 border-gray-200 opacity-30 rotate-[8deg]" />
+        <div className="hidden absolute w-100 h-100 left-10 top-30 border-30 border-gray-50 rounded-full md:block"></div>
+        <div className="absolute w-100 h-100 right-10 top-60 border-30 border-gray-50 rounded-full md:top-30"></div>
+        <div className="hidden absolute left-8 top-1/2 -translate-y-1/2 w-48 h-64 rounded-2xl border-2 border-gray-200 opacity-30 rotate-[-8deg] md:block" />
+        <div className="hidden absolute right-8 top-1/2 -translate-y-1/2 w-48 h-64 rounded-2xl border-2 border-gray-200 opacity-30 rotate-[8deg] md:block" />
       </div>
     </section>
   );

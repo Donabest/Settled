@@ -19,11 +19,11 @@ function Hero() {
           confirmed transactions without the stress of chasing anyone down.
         </p>
 
-        <div className="flex justify-center items-center space-x-4 mt-10 font-monserrat font-medium">
+        <div className="flex flex-col justify-center items-center space-y-4 mt-10 font-monserrat font-medium md:flex-row md:space-x-4 md:space-y-0">
           <Link
             href=""
             type="button"
-            className="flex justify-center items-center gap-2  bg-black text-white px-6 py-4 rounded-sm hover:bg-black/80  cursor-pointer transition-all duration-250 ease-in-out hover:-translate-y-0.5"
+            className="flex justify-center items-center gap-2  bg-black text-white px-6 py-4 rounded-sm hover:bg-black/80  cursor-pointer transition-all duration-250 ease-in-out hover:-translate-y-0.5 "
           >
             Get started free
             <ArrowRight size={15} />
@@ -31,7 +31,7 @@ function Hero() {
           <Link
             href="#HowItWorks"
             type="button"
-            className="text-[#0F172A] px-6 py-4 border border-[#0F172A]/20 rounded-sm cursor-pointer shadow-2xs transition-all duration-250 ease-in-out hover:shadow-2xl hover:-translate-y-0.5 hover:bg-black/5 "
+            className="text-[#0F172A] px-8 py-4 border border-[#0F172A]/20 rounded-sm cursor-pointer shadow-2xs transition-all duration-250 ease-in-out hover:shadow-2xl hover:-translate-y-0.5 hover:bg-black/5 "
           >
             See how it works
           </Link>
@@ -42,7 +42,7 @@ function Hero() {
         <CardOne />
       </div>
 
-      <div className="absolute top-[75%] -right-8 md:-right-3 md:top-[50%] -rotate-6">
+      <div className="absolute top-[80%] -right-8 md:-right-3 md:top-[50%] -rotate-6">
         <CardTwo />
       </div>
     </header>
