@@ -42,7 +42,7 @@ function Hero() {
         <CardOne />
       </div>
 
-      <div className="absolute top-[80%] -right-8 md:-right-3 md:top-[50%] -rotate-6">
+      <div className="absolute top-[82%] -right-20 md:-right-3 md:top-[50%] -rotate-6">
         <CardTwo />
       </div>
     </header>
