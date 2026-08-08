@@ -69,7 +69,7 @@ function HowItWorks() {
           </div>
           <Link
             href={""}
-            className="px-8 py-3 bg-black text-white rounded-full hover:bg-black/80"
+            className="px-8 py-3 bg-black text-white rounded-sm hover:bg-black/80"
           >
             Get Started Now
           </Link>

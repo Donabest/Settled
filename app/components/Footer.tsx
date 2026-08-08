@@ -8,7 +8,7 @@ function Footer() {
   };
   return (
     <footer className="bg-black text-white border-t border-gray-100 py-12 mt-24">
-      <div className="max-w-7xl mx-auto px-6 gap-8 flex flex-col md:grid md:grid-cols-4">
+      <div className="max-w-6xl mx-auto px-10 flex flex-col gap-8 md:gap-4 md:grid md:grid-cols-4">
         <div className="space-y-3">
           <div className="font-syne font-semibold text-2xl italic tracking-tight text-shadow-lg">
             <h5>
@@ -47,16 +47,16 @@ function Footer() {
           <p className="text-sm text-neutral-400 font-nunito italic  ">
             Get tips,product updates,and insight on better invoice{" "}
           </p>
-          <div className="relative">
+          <div className="relative w-full font-sans text-sm italic ">
             <input
               type="text"
               id="news"
-              className="w-70 h-10 font-sans text-sm px-4 border border-neutral-600 italic outline-0 rounded-3xl"
+              className="w-full h-10 px-4 border border-neutral-600 outline-0 rounded-3xl"
               placeholder="email address"
             />
             <label
               htmlFor="news"
-              className="absolute right-4 top-2 flex justify-center items-center bg-white text-black text-sm px-4 py-0.5 rounded-3xl cursor-pointer hover:bg-white/80"
+              className=" absolute right-4 top-2 flex justify-center items-center bg-white text-muted px-2 py-0.5 rounded-3xl cursor-pointer hover:text-black "
             >
               Subscribe <ArrowRight size={10} />
             </label>

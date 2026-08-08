@@ -10,6 +10,7 @@ import {
   Smartphone,
   Users,
 } from "lucide-react";
+import { cn } from "../lib/utils";
 
 const planFeature = [
   {
@@ -127,11 +128,12 @@ function Pricing() {
             }) => (
               <article
                 key={name}
-                className={`relative rounded-2xl border p-5 shadow-2xl shadow-black/10 ${
+                className={cn(
+                  "relative rounded-2xl border p-5 shadow-2xl shadow-black/10 ",
                   featured
                     ? "border-surface bg-surface text-white"
-                    : "border-gray-300/50 bg-zinc-100 text-surface"
-                }`}
+                    : "border-gray-300/50 bg-zinc-100 text-surface",
+                )}
               >
                 {featured && (
                   <div className="absolute right-5 top-5 flex items-center gap-2 rounded-full bg-primary px-3 py-1 font-sans text-xs font-medium text-surface">
@@ -140,11 +142,12 @@ function Pricing() {
                 )}
                 <div className="bg-white p-6 shadow-lg rounded-2xl space-y-3">
                   <div
-                    className={`flex h-8 w-8 items-center justify-center rounded-full ${
+                    className={cn(
+                      "flex h-8 w-8 items-center justify-center rounded-full",
                       featured
                         ? "bg-white/10 text-primary"
-                        : "bg-primary/10 text-primary"
-                    }`}
+                        : "bg-primary/10 text-primary",
+                    )}
                   >
                     <Icon size={15} />
                   </div>
@@ -154,22 +157,24 @@ function Pricing() {
                       {name}
                     </h3>
                     <p
-                      className={` max-w-sm font-sans text-sm leading-6 ${
-                        featured ? "text-white/65" : "text-muted"
-                      }`}
+                      className={cn(
+                        "max-w-sm font-sans text-sm leading-6 ",
+                        featured ? "text-white/65" : "text-muted",
+                      )}
                     >
                       {description}
                     </p>
                   </div>
 
                   <div className=" flex items-end gap-1">
-                    <span className="font-nunito text-4xl font-semibold tracking-tight">
+                    <span className="font-nunito text-4xl font-semibold tracking-tight ">
                       {price}
                     </span>
                     <span
-                      className={`pb-2 font-sans text-xs ${
-                        featured ? "text-white/55" : "text-muted"
-                      }`}
+                      className={cn(
+                        "pb-2 font-sans text-xs ",
+                        featured ? "text-white/55" : "text-muted",
+                      )}
                     >
                       {period}
                     </span>
@@ -177,11 +182,12 @@ function Pricing() {
 
                   <button
                     type="button"
-                    className={` flex w-full items-center justify-center gap-2 rounded-full px-5 py-3 font-sans text-sm font-medium transition-colors ${
+                    className={cn(
+                      " flex w-full items-center justify-center gap-2 rounded-full px-5 py-3 font-sans text-sm font-medium transition-colors cursor-pointer",
                       featured
                         ? "bg-primary text-surface hover:bg-primary/90"
-                        : "border border-surface/10 text-surface hover:bg-surface/5"
-                    }`}
+                        : "border border-surface/10 text-surface hover:bg-surface/5",
+                    )}
                   >
                     {button}
                     <ArrowRight size={15} />
@@ -189,9 +195,10 @@ function Pricing() {
                 </div>
 
                 <div
-                  className={`my-4 h-px ${
-                    featured ? "bg-white/10" : "bg-gray-100"
-                  }`}
+                  className={cn(
+                    "my-4 h-px ",
+                    featured ? "bg-white/10" : "bg-gray-100",
+                  )}
                 />
 
                 <ul className="space-y-4">
@@ -201,18 +208,20 @@ function Pricing() {
                   {features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
                       <span
-                        className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full ${
+                        className={cn(
+                          "flex h-4 w-4 shrink-0 items-center justify-center rounded-full",
                           featured
                             ? "bg-primary/15 text-primary"
-                            : "bg-surface text-white"
-                        }`}
+                            : "bg-surface text-white",
+                        )}
                       >
                         <Check size={10} />
                       </span>
                       <span
-                        className={`font-sans text-sm ${
-                          featured ? "text-white/80" : "text-muted"
-                        }`}
+                        className={cn(
+                          "font-sans text-sm",
+                          featured ? "text-white/80" : "text-muted",
+                        )}
                       >
                         {feature}
                       </span>

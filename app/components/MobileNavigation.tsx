@@ -13,7 +13,7 @@ function MobileNavigation({ open, navLinks, close }: props) {
     <AnimatePresence>
       {open && (
         <motion.ul
-          className="divide-y divide-stone-300 space-y-2 pt-6 md:hidden"
+          className="container space-y-2 p-6 font-monserrat font-medium border-t border-t-gray-300/50 md:hidden"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ x: -50, opacity: 0 }}
@@ -21,9 +21,9 @@ function MobileNavigation({ open, navLinks, close }: props) {
           {navLinks.map((navlink, i) => (
             <motion.li
               key={i}
-              className="text-[17px] transition-color py-2 px-4 text-muted hover:text-black"
+              className="text-[17px] transition-color py-2 px-4 text-muted cursor-pointer rounded-lg  hover:bg-gray-200 hover:text-black"
               whileHover={{
-                y: -2,
+                y: -1.5,
               }}
               transition={{
                 type: "spring",
@@ -34,8 +34,8 @@ function MobileNavigation({ open, navLinks, close }: props) {
               <Link href={navlink.to}>{navlink.link}</Link>
             </motion.li>
           ))}
-          <li className="text-[17px] transition-color py-2  px-4 text-muted hover:text-black">
-            Sign in
+          <li className="text-[17px] transition-color py-2  px-4 text-muted cursor-pointer rounded-lg hover:bg-gray-200 hover:text-black">
+            log in
           </li>
         </motion.ul>
       )}

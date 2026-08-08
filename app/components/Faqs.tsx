@@ -36,7 +36,7 @@ const questionAndAnswer = [
 ];
 
 function Faqs() {
-  const [showAns, setShowAns] = useState<number | null>(0);
+  const [showAns, setShowAns] = useState<number | null>(2);
 
   return (
     <section id="Faq" className="pb-20">

@@ -56,7 +56,7 @@ export default function RootLayout({
         jakartaSans.variable,
         syne.variable,
         Monserrat.variable,
-        "h-full antialiased scroll-smooth ",
+        "h-full antialiased scroll-smooth selection:bg-black selection:text-white",
       )}
     >
       <body className=" min-h-full overflow-x-hidden">
